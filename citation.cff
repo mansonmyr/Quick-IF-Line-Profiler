@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Ooi
+  given-names: Kai
+  orcid: "https://orcid.org/0000-0003-3803-7864"
+  
+title: "Quick-IF-Line-Profiler"
+version: 1.0.0
+date-released: 2026-04-07
+url: "https://github.com/mansonmyr/Quick-IF-Line-Profiler"
