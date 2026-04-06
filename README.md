@@ -2,8 +2,6 @@
 
 A browser-only TIFF line intensity profiler for 2-, 3-, and 4-channel scientific TIFF files stored as `uint8` or `uint16` data. 
 
-[![Live Demo](https://img.shields.io/badge/Launch_Live_Demo-00AD9F?style=for-the-badge&logo=netlify&logoColor=white)](https://qilp.netlify.app)
-
 <p align="center">
   <a href="https://qilp.netlify.app">
     <img src="https://img.shields.io/badge/Launch_Live_Demo-00AD9F?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo">
