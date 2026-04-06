@@ -230,4 +230,5 @@ This project was developed using a combination of open computational platforms a
 	•	Codex
 
 # Citation
-If you use this software, please cite it as: K.H.,Ooi.(2026).Probabilistic_Colocalization_Estimator. version: 1.0.0. date-released: 2026-04-04.https://github.com/mansonmyr/Probabilistic_Colocalization_Estimator
+If you use this software, please cite it as: K.H.,Ooi.(2026). Quick-IF-Line-Profiler. version: 1.0.0. date-released: 2026-04-07. https://github.com/mansonmyr/Quick-IF-Line-Profiler
+
