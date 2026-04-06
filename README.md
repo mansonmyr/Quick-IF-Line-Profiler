@@ -22,7 +22,7 @@ The app lets you:
 Install dependencies and start the development server:
 
 ```bash
-cd '/Users/kaihong/Documents/New-Project'
+cd 'your folder path'
 npm install
 npm run dev
 ```
@@ -32,7 +32,7 @@ Open the local URL printed by Vite, usually `http://localhost:5173`.
 To test the production-style build locally:
 
 ```bash
-cd '/Users/kaihong/Documents/New-Project'
+cd 'your folder path'
 npm run build
 npm run preview
 ```
