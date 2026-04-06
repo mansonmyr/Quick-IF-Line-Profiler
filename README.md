@@ -1,6 +1,7 @@
 # Adaptive Netlify Line Profiler
 
-A browser-only TIFF line intensity profiler for 2-, 3-, and 4-channel scientific TIFF files stored as `uint8` or `uint16` data. The app is built as a static Vite + React + TypeScript single-page app so it can be deployed directly to Netlify without a Python backend, Electron bridge, or server-side image processing.
+A browser-only TIFF line intensity profiler for 2-, 3-, and 4-channel scientific TIFF files stored as `uint8` or `uint16` data. 
+---
 
 ## What The App Does
 
@@ -14,6 +15,7 @@ The app lets you:
 - View one raw intensity chart with channel overlays and peak markers.
 - Inspect adaptive quick metrics and detailed per-peak measurements.
 - Export the results as 720p TIFF, CSV, and JSON.
+---
 
 ## How To Run Locally
 
@@ -34,6 +36,7 @@ cd '/Users/kaihong/Documents/New-Project'
 npm run build
 npm run preview
 ```
+---
 
 ## How To Use The Software
 
@@ -50,6 +53,11 @@ npm run preview
    - `TIFF` for the plotted chart at a fixed 1280 x 720 output
    - `CSV` for sampled numeric traces
    - `JSON` for the full structured analysis result
+---
+
+## Rolling-Ball Background Subtraction
+
+The app includes a rolling-ball-style background subtraction step. Suggest to start at 500 px to observe the effect.
 
 ## What The Intensity Chart Means
 
@@ -158,6 +166,7 @@ If rolling-ball subtraction is enabled, the chart reflects the processed signal 
 - Higher AUC means more total accumulated signal along the ROI.
 - AUC can increase because the signal is brighter, wider, or both.
 - AUC is often the most stable summary when the trace is noisy or highly irregular.
+---
 
 ## How To Understand Multi-Peak FWHM
 
@@ -187,34 +196,7 @@ Use the quick metric like this:
   - Typical wording: `Total Signal: Y units`
 
 In short: use the peak table for local detail, and use the highlighted quick metric for the overall take-home interpretation.
-
-## Rolling-Ball Background Subtraction
-
-The app includes a browser-side rolling-ball-style background subtraction step.
-
-### What It Does
-
-- Estimates broad, low-frequency background in each channel.
-- Subtracts that background from the signal.
-- Clips negative values to zero.
-- Updates both the preview image and the measured line traces after you click `Preview / Apply`.
-
-### Radius Meaning
-
-- Smaller radius:
-  - weaker subtraction
-  - preserves more low-scale intensity variation
-- Larger radius:
-  - stronger subtraction against broad haze or uneven background
-  - better for large-scale background that should not dominate the profile
-
-### How To Use It
-
-1. Enable the rolling-ball toggle.
-2. Enter a radius in pixels.
-3. Click `Preview / Apply`.
-4. Compare the updated preview and chart.
-5. Disable the toggle and apply again if you want to return to the raw signal.
+---
 
 ## Export Formats
 
@@ -232,17 +214,7 @@ The app includes a browser-side rolling-ball-style background subtraction step.
 
 - Exports the image metadata, ROI, calibration, preprocessing settings, traces, quick metrics, AUC values, peak list, and FWHM-related measurements.
 - Best for reproducible analysis records or downstream scripting.
-
-## Netlify Deployment Notes
-
-This project is intentionally Netlify deployable as a static app:
-
-- Build command: `npm run build`
-- Publish directory: `dist`
-- No backend routes required
-- No Python runtime required
-- No Node-only runtime code shipped to the browser
-- TIFF parsing and analysis run in a Web Worker in the client
+---
 
 ## Current Limits
 
@@ -250,3 +222,12 @@ This project is intentionally Netlify deployable as a static app:
 - TIFF support is limited to 2-, 3-, and 4-channel files.
 - TIFF data types are limited to `uint8` and `uint16`.
 - Rolling-ball subtraction is a browser-side approximation intended for interactive profiling in this app.
+---
+
+# Disclaimer
+This repository was a Vibe Coding Project for non-coding specialist (like me).
+This project was developed using a combination of open computational platforms and AI-assisted coding tools:
+	•	Codex
+
+# Citation
+If you use this software, please cite it as: K.H.,Ooi.(2026).Probabilistic_Colocalization_Estimator. version: 1.0.0. date-released: 2026-04-04.https://github.com/mansonmyr/Probabilistic_Colocalization_Estimator
