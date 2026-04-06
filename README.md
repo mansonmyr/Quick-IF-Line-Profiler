@@ -4,8 +4,6 @@ A browser-only TIFF line intensity profiler for 2-, 3-, and 4-channel scientific
 
 [![Live Demo](https://img.shields.io/badge/Launch_Live_Demo-00AD9F?style=for-the-badge&logo=netlify&logoColor=white)](https://qilp.netlify.app)
 
-[![Live Demo](https://img.shields.io/badge/Launch_Live_Demo-00AD9F?style=flat-square&logo=netlify&logoColor=white)](https://qilp.netlify.app)
-
 ## What The App Does
 
 The app lets you:
